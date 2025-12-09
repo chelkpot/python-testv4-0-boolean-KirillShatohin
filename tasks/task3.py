@@ -2,8 +2,10 @@
 
 def solve():
 # Ниже пишите решение задачи
-    word1, word2 = input().split()
-    print("True" if word1 == "awesome" or word2 == "awesome" else "False")
+    parts = input().split()
+    word1 = parts[0]
+    word2 = parts[1] if len(parts) > 1 else ""
+    print(str(word1 == "awesome" or word2 == "awesome"))
 
 # Код ниже не трогать! он нужен для тестов
 if __name__ == "__main__":
