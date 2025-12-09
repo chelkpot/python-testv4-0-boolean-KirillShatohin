@@ -3,7 +3,7 @@
 def solve():
 # Ниже пишите решение задачи
     words = input().split()
-    print("awesome" in words)
+    print("True" if "awesome" in words else "False")
 
 # Код ниже не трогать! он нужен для тестов
 if __name__ == "__main__":
